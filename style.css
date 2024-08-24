@@ -103,9 +103,18 @@ body {
     color: #E5E7EB;
 }
 
-.hero-img{
-    width: 300px;
-    height: 300px;
+/* Wrapped img in a container so container can flex shrink and the img scales with it. */
+.hero-img-container {
+    flex: 0 1 300px;
+    /* limits the amount the image can shrink so it doesnt get too small */
+    min-width: 230px;
+    display: flex;
+}
+
+.hero-img {
+    /* hero image fills up the container so it scales properly */
+    width: 100%;
+    height: 100%;
 }
 
 .hero button, 
@@ -134,4 +143,31 @@ body {
     /* On hover, set text color to black */
     color: black;
 
+}
+
+/* FEATURES BAR STYLING */
+
+.features-container {
+    display: flex;
+    /* Align along main axis (horizontal) */
+    justify-content: center;
+    padding: 32px 32px;
+}
+
+/* Removes default margins and paddings for all elements under features container class.  */
+.features-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.features {
+    flex: 0 1 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-cards {
+    display: flex;
 }
