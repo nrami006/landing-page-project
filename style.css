@@ -166,6 +166,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* Gap between features title and feature cards */
+    gap: 32px;
 }
 
 .features-title {
@@ -175,4 +177,24 @@ body {
 
 .features-cards {
     display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 0 1 200px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-container {
+    /* img container fills up what it can so that it can occupy space even if image isnt loaded...i think. */
+    flex: 1;
+    display: flex;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: auto; */
 }
