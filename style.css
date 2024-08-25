@@ -158,11 +158,11 @@ body {
     display: flex;
     /* Align along main axis (horizontal) */
     justify-content: center;
-    padding: 32px 32px;
+    padding: 32px 32px 132px;
 }
 
 .features {
-    flex: 0 1 1200px;
+    flex: 0 1 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,4 +205,36 @@ body {
     height: 100%;
     /* Maintains aspect ratio to 1:1 so cards look more uniform */
     aspect-ratio: 1;
+}
+
+/* TESTIMONIAL STYLING */
+
+.testimonial-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+.testimonial {
+    flex: 0 1 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 32px;
+    color: #1F2937
+}
+
+.testimonial p{
+    font-size: 36px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
 }
