@@ -106,7 +106,6 @@ body {
 /* Wrapped img in a container so container can flex shrink and the img scales with it. */
 .hero-img-container {
     flex: 0 1 300px;
-    /* limits the amount the image can shrink so it doesnt get too small */
     min-width: 230px;
     display: flex;
 }
@@ -115,6 +114,8 @@ body {
     /* hero image fills up the container so it scales properly */
     width: 100%;
     height: 100%;
+    /* Makes the image take up the proper space before its finished loading */
+    aspect-ratio: 1;
 }
 
 .hero button, 
@@ -178,23 +179,30 @@ body {
 .features-cards {
     display: flex;
     justify-content: space-around;
+    /* Allows cards to wrap when page narrows */
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .card {
     flex: 0 1 200px;
-    min-width: 100px;
+    /* min-width: 100px; */
+    /* Gap between card img and text below it */
+    gap: 16px;
     display: flex;
     flex-direction: column;
 }
 
+/* This doesnt do much at the moment because features will wrap before it shrinks.. */
 .card-img-container {
     /* img container fills up what it can so that it can occupy space even if image isnt loaded...i think. */
-    flex: 1;
+    flex: 1 1 200px;
     display: flex;
 }
 
 .card img {
     width: 100%;
     height: 100%;
-    /* aspect-ratio: auto; */
+    /* Maintains aspect ratio to 1:1 so cards look more uniform */
+    aspect-ratio: 1;
 }
