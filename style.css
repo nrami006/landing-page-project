@@ -4,7 +4,7 @@ body {
     font-size: 18px;
 }
 
-.header-container {
+header {
     display: flex;
     /* Set background color */
     background-color: #1F2937;
