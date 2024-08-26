@@ -4,7 +4,7 @@ body {
     font-size: 18px;
 }
 
-.header-container{
+.header-container {
     display: flex;
     /* Set background color */
     background-color: #1F2937;
@@ -12,6 +12,7 @@ body {
     justify-content: center;
     /* set max-width */
 }
+
 .header {
     /* Allow header to shrink */
     flex: 0 1 1200px;
@@ -67,7 +68,7 @@ body {
     padding: 48px 32px;
 }
 
-.hero{
+.hero {
     flex: 0 1 1200px;
     display: flex;
     justify-content: space-between;
@@ -118,7 +119,7 @@ body {
     aspect-ratio: 1;
 }
 
-.hero button, 
+.hero button,
 .hero a {
     /* flex: 0 1 auto; */
     width: 120px;
@@ -138,7 +139,8 @@ body {
     /* makes the transition on hover more smooth. */
     transition-duration: 0.4s;
 }
-.hero button:hover{
+
+.hero button:hover {
     /* On hover, set background color to white */
     background-color: white;
     /* On hover, set text color to black */
@@ -214,7 +216,7 @@ body {
     padding: 0;
 }
 
-.testimonial-container{
+.testimonial-container {
     display: flex;
     justify-content: center;
     background-color: #E5E7EB;
@@ -228,8 +230,9 @@ body {
     color: #1F2937
 }
 
-.testimonial p{
+.testimonial p {
     font-size: 36px;
+    font-weight: lighter;
     font-style: italic;
 }
 
