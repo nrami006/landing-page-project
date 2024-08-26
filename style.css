@@ -223,7 +223,8 @@ body {
 }
 
 .testimonial {
-    flex: 0 1 800px;
+    flex: 0 1 900px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 150px 32px;
@@ -240,4 +241,85 @@ body {
     font-size: 24px;
     font-weight: bold;
     align-self: flex-end;
+    padding-right: 32px
+}
+
+/* Call to action styling */
+
+.cta-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    /* Allows shrinking and sets basis to 1200px for consistency with other parts of the page */
+    flex: 0 1 1200px;
+    /* So that 1200px stays 1200px as expected when changing margin/padding */
+    box-sizing: border-box;
+    background-color: #3882F6;
+    /* Rounds corners */
+    border-radius: 8px;
+    /* Creates the white space around the blue box */
+    margin: 100px 32px;
+    /* Creates empty space between content and edges of blue box */
+    padding: 64px 128px;
+    /* Allows sign up button to wrap when page narrows*/
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.cta-text-container {
+    color: white;
+}
+
+.cta h1 {
+    font-size: 24px;
+}
+
+.cta p {
+    color: #E5E7EB;
+}
+
+.cta a {
+    border: 1px solid white;
+}
+
+.cta button {
+    border: none;
+}
+
+.cta a,
+.cta button {
+    flex: 0 1 150px;
+    width: 150px;
+    height: 40px;
+    background-color: #3882F6;
+    /* Round the button border */
+    border-radius: 8px;
+    color: #E5E7EB;
+    font-size: 15px;
+    font-weight: bold;
+    /* align text to center */
+    text-align: center;
+    /* makes cursor a hand pointer when hovering over the button */
+    cursor: pointer;
+    /* makes the transition on hover more smooth. */
+    transition-duration: 0.4s;
+}
+
+.cta button:hover,
+.cta a:hover {
+    /* On hover, set background color to white */
+    background-color: white;
+    /* On hover, set text color to black */
+    color: black;
+
 }
