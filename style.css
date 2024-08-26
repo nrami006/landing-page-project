@@ -160,7 +160,7 @@ header {
     display: flex;
     /* Align along main axis (horizontal) */
     justify-content: center;
-    padding: 32px 32px 132px;
+    padding: 98px 32px;
 }
 
 .features {
@@ -227,7 +227,7 @@ header {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 150px 32px;
+    padding: 116px 32px;
     color: #1F2937
 }
 
@@ -298,6 +298,7 @@ header {
 
 .cta a,
 .cta button {
+    align-self: flex-end;
     flex: 0 1 150px;
     width: 150px;
     height: 40px;
